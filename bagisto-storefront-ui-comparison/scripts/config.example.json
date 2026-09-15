@@ -1,0 +1,50 @@
+{
+  "playwright": "/absolute/path/to/node_modules/playwright",
+  "out": "/absolute/path/to/scratchpad/shots",
+
+  "baseline":  { "key": "baseline",  "name": "bagisto-stable", "url": "http://localhost/bagisto-stable/public" },
+  "candidate": { "key": "candidate", "name": "bagisto-next",   "url": "http://localhost/bagisto-next/public" },
+
+  "viewports": [
+    ["desktop", 1440, 900],
+    ["mobile", 390, 844]
+  ],
+
+  "category": "/mens",
+  "product": "/blossom-breeze-cotton-printed-short-skirt",
+  "standaloneProduct": "/digital-air-fryer-with-touch-controls-45l",
+
+  "credentials": {
+    "email": "uicompare@example.com",
+    "password": "Password@123",
+    "firstName": "UI",
+    "lastName": "Compare"
+  },
+
+  "pages": [
+    ["home", "/"],
+    ["category", "/mens"],
+    ["product-configurable", "/blossom-breeze-cotton-printed-short-skirt"],
+    ["product-simple", "/digital-air-fryer-with-touch-controls-45l"],
+    ["search", "/search?query=shirt"],
+    ["search-empty", "/search?query=zzzzqqqq"],
+    ["cart-empty", "/checkout/cart"],
+    ["login", "/customer/login"],
+    ["register", "/customer/register"],
+    ["forgot-password", "/customer/forgot-password"],
+    ["compare-empty", "/compare"],
+    ["cms", "/page/about-us"],
+    ["contact", "/contact-us"],
+    ["404", "/this-page-does-not-exist-xyz"]
+  ],
+
+  "accountPages": [
+    ["acct-profile", "/customer/account/profile"],
+    ["acct-profile-edit", "/customer/account/profile/edit"],
+    ["acct-orders", "/customer/account/orders"],
+    ["acct-addresses", "/customer/account/addresses"],
+    ["acct-address-create", "/customer/account/addresses/create"],
+    ["acct-wishlist", "/customer/account/wishlist"],
+    ["acct-reviews", "/customer/account/reviews"]
+  ]
+}

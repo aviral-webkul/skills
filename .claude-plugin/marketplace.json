@@ -1,0 +1,22 @@
+{
+  "name": "bagisto-skills",
+  "description": "Bagisto authoring and QA skills: module blog writing, blog fact-checking and SEO, and storefront UI regression comparison.",
+  "owner": { "name": "Webkul" },
+  "plugins": [
+    {
+      "name": "bagisto-blog-update",
+      "source": "./bagisto-blog-update",
+      "description": "Audit an existing Bagisto module blog against the package source, correct what drifted, and run a Yoast SEO and readability pass."
+    },
+    {
+      "name": "bagisto-feature-blog",
+      "source": "./bagisto-feature-blog",
+      "description": "Write and illustrate a customer-facing Bagisto feature announcement blog in WordPress Gutenberg HTML."
+    },
+    {
+      "name": "bagisto-storefront-ui-comparison",
+      "source": "./bagisto-storefront-ui-comparison",
+      "description": "Compare the storefront UI of two Bagisto installs and report only genuine visual regressions."
+    }
+  ]
+}
